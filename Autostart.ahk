@@ -26,10 +26,10 @@ F4::
     ClickSearchbar(Searchbar)
 
     SendInput, BakkesMod 
-    Sleep, 300
+    Sleep, 250
 
     Click, 104, 143 ; --> Start BakkesMod
-    Sleep, 300
+    Sleep, 250
 
     Click %ExitWindow%
     Sleep 150
@@ -37,32 +37,31 @@ F4::
     ClickSearchbar(Searchbar)
 
     SendInput, Epic Games 
-    Sleep, 300
+    Sleep, 250
 
     Click, 104, 143 ; Start EpicGames
-    Sleep, 18000
+    Sleep, 14000
 
     Click, 118, 421 ; Start Rocket Leauge
-    Sleep, 300
+    Sleep, 250
 
     Click, 1510, 13 ; Closing Epic Games Window
-    Sleep, 25000
+    Sleep, 22500
 
     ;---------------In-Game-Now-------------
 
     ;Click, %ExitWindow%
     SendInput, Enter
-    SoundBeep 200,300
-    Sleep, 2000
+    Sleep, 1850
 
     Click, 211, 518 ; Starting Mode Choice
-    Sleep, 450
+    Sleep, 275
 
     Click, 572, 655 ; Chosing Training
-    Sleep, 450
+    Sleep, 275
 
     Click, 504, 342 ; Chosing Freeplay
-    Sleep, 450
+    Sleep, 275
 
     Click, 948, 683 ; Chosing Arena for Freeplay
 
