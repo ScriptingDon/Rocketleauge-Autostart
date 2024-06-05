@@ -5,6 +5,7 @@ SetWorkingDir %A_ScriptDir%
 ;------------------Variables----------------------------
 
 Searchbar = 733, 1058
+ExitWindow = 443, 14
 
 ;------------------Functions----------------------------
 
@@ -20,32 +21,55 @@ ClickSearchbar(Searchbar){
 
 F4::
 
-    Sleep, 500
+    Sleep, 300
 
     ClickSearchbar(Searchbar)
 
     SendInput, BakkesMod 
-    Sleep, 400
+    Sleep, 300
 
     Click, 104, 143 ; --> Start BakkesMod
-    Sleep, 400
+    Sleep, 300
 
-    Click, 443, 14 ; --> Exit Window
+    Click %ExitWindow%
     Sleep 150
 
     ClickSearchbar(Searchbar)
 
     SendInput, Epic Games 
-    Sleep, 400
+    Sleep, 300
 
     Click, 104, 143 ; Start EpicGames
-    Sleep, 10000
+    Sleep, 18000
 
     Click, 118, 421 ; Start Rocket Leauge
-    Sleep, 400
+    Sleep, 300
 
     Click, 1510, 13 ; Closing Epic Games Window
+    Sleep, 25000
+
+    ;---------------In-Game-Now-------------
+
+    ;Click, %ExitWindow%
+    SendInput, Enter
+    SoundBeep 200,300
+    Sleep, 2000
+
+    Click, 211, 518 ; Starting Mode Choice
+    Sleep, 450
+
+    Click, 572, 655 ; Chosing Training
+    Sleep, 450
+
+    Click, 504, 342 ; Chosing Freeplay
+    Sleep, 450
+
+    Click, 948, 683 ; Chosing Arena for Freeplay
+
+    ExitApp
 return
+
+
 
 ;------------------Exit App------------------------------
 
