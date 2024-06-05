@@ -4,7 +4,7 @@ SetWorkingDir %A_ScriptDir%
 
 ;------------------Variables----------------------------
 
-Searchbar = 733, 1058
+Searchbar = 843, 1050
 ExitWindow = 443, 14
 
 ;------------------Functions----------------------------
